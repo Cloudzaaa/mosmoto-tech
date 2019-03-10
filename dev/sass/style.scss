@@ -1,0 +1,260 @@
+$blue: #1c69d4;
+$grey: #dadada;
+$darkgrey: #4d4d4d;
+
+@font-face {
+  font-family: "bmw";
+  src: url("../fonts/bmwtypewebbo_all.woff") format("woff");
+  src: url("../fonts/BMWTypeWebBoldAll-Italic.woff") format("woff");
+  src: url("../fonts/bmwtypewebli_all.woff") format("woff");
+  src: url("../fonts/BMW_Helvetica_Bold.ttf") format("truetype");
+  src: url("../fonts/bmwtypewebboall.ttf") format("truetype");
+  src: url("../fonts/BMWTypeWebBoldAll-Italic.ttf") format("truetype");
+  src: url("../fonts/bmwtypewebli_all_1.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: "bmw", sans-serif !important;
+}
+
+.sec-main{
+  background-image: url('../images/slider-bg-1.jpg');
+  background-position: 0% 50%;
+  background-size: cover;
+}
+
+.sec-main-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.sec-title{
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 1.8;
+  margin-bottom: 70px;
+}
+
+.navbar-wrap{
+  border-bottom: 1px solid #797975;
+}
+
+.navbar {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  &-brand {
+    display: flex;
+  }
+  &-menu {
+    display: flex;
+    margin-left: auto;
+    &-item {
+      list-style-type: none;
+      &__link {
+        padding: 0 20px;
+        text-decoration: none;
+        color: #fff;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+
+  &-contacts {
+    margin-left: 30px;
+    color: #fff;
+    display: flex;
+    &-phone__img {
+      width: 15px;
+      height: 15px;
+      background-image: url("../images/phone1-active.svg");
+      margin-right: 30px;
+      margin-top: 2px;
+    }
+
+    &-phone__img {
+      margin-bottom: 5px;
+    }
+
+    &-info-phone__number {
+      margin-bottom: 10px;
+    }
+
+    &-info-phone__number a{
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+
+@media (min-width: 1380px) {
+  .container {
+    width: 1440px;
+  }
+}
+
+.slider-photo{
+  margin-top: 100px;
+}
+
+.btn {
+  color: #fff;
+  background-color: $blue;
+  text-decoration: none;
+  height: 70px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+  border-top: 1px solid #245eaf;
+  letter-spacing: 2px;
+  transition: 0.2s;
+
+  &:active, &:hover {
+    background-color: #08479e;
+  }
+}
+
+.sec-news{
+  padding: 50px 0;
+}
+
+.sec-news .sec-pretitle{
+  margin-bottom: 20px;
+  a {
+    text-decoration: none;
+    color: $blue;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 1.5px;
+  }
+}
+
+.news-cards-card{
+  display: block;
+  cursor: pointer;
+  height: 150px;
+  padding: 32px;
+  border-radius: 5px;
+  border: 1px solid $grey;
+  transition: 0.2s;
+  &:hover {
+    border: 1px solid $blue;
+  }
+
+  &:hover &__title{
+    color: $blue;
+  }
+
+  &__date{
+    font-size: 14px;
+    color: #4d4d4d;
+    margin-bottom: 5px;
+  }
+  &__title{
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    transition: 0.2s;
+    color: $darkgrey;
+    font-weight: bold;
+  }
+}

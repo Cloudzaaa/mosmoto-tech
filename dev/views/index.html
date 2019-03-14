@@ -19,6 +19,8 @@
     <title>Home page</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/boosted-grid.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -27,11 +29,12 @@
         <div class="container">
           <nav class="navbar">
             <div class="navbar-brand">
-              <img
+                <a href="/" class="navbar-brand__logo">
+                    <img
                       src="images/logo.svg"
                       alt="logo"
-                      class="navbar-brand__logo"
-              />
+                    />
+                </a>
             </div>
             <ul class="navbar-menu">
               <li class="navbar-menu-item">
@@ -47,15 +50,23 @@
                 <a href="" class="navbar-menu-item__link">Контакты</a>
               </li>
             </ul>
-            <div class="navbar-contacts">
+            <div class="navbar-contacts d-none d-lg-block">
               <a href="tel:79067557559" class="navbar-contacts-phone__img"></a>
               <div class="navbar-contacts-info">
                     <p class="navbar-contacts-info-phone__number">
                       <a href="tel:79067557559">7 (906) 755 755 9</a>
                     </p>
-                    <p class="navbar-contacts-info-address__place">Ильменский пр-д. 4</p>
+                    <p class="navbar-contacts-info-address__place">
+                        <a href="https://www.google.com/maps/place/Motoshop-online.ru/@55.8592328,37.5511786,18z/data=!4m5!3m4!1s0x46b537a28388f2b1:0xe46856234771a459!8m2!3d55.8598251!4d37.5505681" target="_blank">Ильменский пр-д. 4</a>
+                    </p>
               </div>
             </div>
+            <a class="navbar-burger d-flex d-lg-none">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                     width="104" height="104"
+                     viewBox="0 0 224 224"
+                     style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#cccccc"><path d="M28,46.66667c-3.36594,-0.0476 -6.49676,1.72084 -8.19362,4.62815c-1.69686,2.90731 -1.69686,6.50306 0,9.41037c1.69686,2.90731 4.82768,4.67575 8.19362,4.62815h168c3.36594,0.0476 6.49676,-1.72084 8.19362,-4.62815c1.69686,-2.90731 1.69686,-6.50306 0,-9.41037c-1.69686,-2.90731 -4.82768,-4.67575 -8.19362,-4.62815zM28,102.66667c-3.36594,-0.0476 -6.49676,1.72084 -8.19362,4.62815c-1.69686,2.90731 -1.69686,6.50306 0,9.41037c1.69686,2.90731 4.82768,4.67575 8.19362,4.62815h168c3.36594,0.0476 6.49676,-1.72084 8.19362,-4.62815c1.69686,-2.90731 1.69686,-6.50306 0,-9.41037c-1.69686,-2.90731 -4.82768,-4.67575 -8.19362,-4.62815zM28,158.66667c-3.36594,-0.0476 -6.49676,1.72084 -8.19362,4.62815c-1.69686,2.90731 -1.69686,6.50306 0,9.41037c1.69686,2.90731 4.82768,4.67575 8.19362,4.62815h168c3.36594,0.0476 6.49676,-1.72084 8.19362,-4.62815c1.69686,-2.90731 1.69686,-6.50306 0,-9.41037c-1.69686,-2.90731 -4.82768,-4.67575 -8.19362,-4.62815z"></path></g></g></svg>
+            </a>
           </nav>
         </div>
       </div>
@@ -68,7 +79,7 @@
               </h1>
                 <div class="container">
                   <div class="row">
-                    <a href="#" class="btn col-lg-5">Услуги сервиса</a>
+                    <a href="/services" class="btn col-lg-5">Услуги сервиса</a>
                   </div>
                 </div>
             </div>
@@ -89,7 +100,7 @@
               <div class="news-cards">
                 <div class="container">
                   <div class="row">
-                      <div class="col-3">
+                      <div class="col-12 col-lg-6 col-xl-3">
                           <a class="news-cards-card">
                               <p class="news-cards-card__date">
                                   18.11.18
@@ -100,35 +111,35 @@
                           </a>
                       </div>
 
-                      <div class="col-3">
+                      <div class="col-12 col-lg-6 col-xl-3">
                           <a class="news-cards-card">
                               <p class="news-cards-card__date">
                                   01.09.18
                               </p>
                               <p class="news-cards-card__title">
-                                  Новый гараж для
+                                  Новый гараж для зимней спячки!
                               </p>
                           </a>
                       </div>
 
-                      <div class="col-3">
+                      <div class="col-12 col-lg-6 col-xl-3">
                           <a class="news-cards-card">
                               <p class="news-cards-card__date">
                                   15.08.18
                               </p>
                               <p class="news-cards-card__title">
-                                  Новые
+                                  Новые экскурсии
                               </p>
                           </a>
                       </div>
 
-                      <div class="col-3">
+                      <div class="col-12 col-lg-6 col-xl-3">
                           <a class="news-cards-card">
                               <p class="news-cards-card__date">
                                   20.07.18
                               </p>
                               <p class="news-cards-card__title">
-                                  Тюнинг
+                                  Тюнинг амортизаторов
                               </p>
                           </a>
                       </div>
@@ -142,24 +153,29 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-3">
-                    <img
-                            src="images/logo.svg"
-                            alt="logo"
-                            class="footer-brand__logo"
-                    />
-                    <p class="footer-brand__text">
-                        Техническое обслуживание и тюнинг
-                        <br>
-                        мотоциклов BMW и KTM
-                    </p>
+                <div class="col-12 col-md-3">
+                    <div class="footer-brand-info-wrap">
+                        <div>
+                            <img
+                                    src="images/logo.svg"
+                                    alt="logo"
+                                    class="footer-brand__logo"
+                            />
+                            <p class="footer-brand__text">
+                                Техническое обслуживание и тюнинг
+                                <br>
+                                мотоциклов BMW и KTM
+                            </p>
+                        </div>
 
-                    <p class="footer__rights">
-                        Mosmototech 2018. <br>
-                        Ремонт мотоциклов BMW и KTM
-                    </p>
+                        <p class="footer__rights">
+                            Mosmototech 2018. <br>
+                            Ремонт мотоциклов BMW и KTM
+                        </p>
+                    </div>
                 </div>
-                <div class="col-3">
+
+                <div class="col-12 col-md-3 col-xl-2 offset-md-1 d-none d-xl-block">
                     <h3 class="footer-col__title">
                         Меню сайта
                     </h3>
@@ -169,11 +185,12 @@
                         </li>
 
                         <li class="footer-navbar-menu-item">
-                            <a href="" class="footer-navbar-menu-item__link">Ремонт и обслуживание амортизаторов и вилок</a>
+                            <a href="" class="footer-navbar-menu-item__link">Ремонт и обслуживание <br>
+                                амортизаторов и вилок</a>
                         </li>
 
                         <li class="footer-navbar-menu-item">
-                            <a href="" class="footer-navbar-menu-item__link">Интрнет-магазин</a>
+                            <a href="" class="footer-navbar-menu-item__link">Интернет-магазин</a>
                         </li>
 
                         <li class="footer-navbar-menu-item">
@@ -186,56 +203,90 @@
                     </ul>
                 </div>
 
-                <div class="col-3">
-                    <h3 class="footer-col__title">
+                <div class="col-12 col-md-3 col-xl-2 offset-md-1">
+                    <div class="footer-socials">
+                        <h3 class="footer-col__title">
                         Социальные сети
                     </h3>
-                    <ul>
-                        <li>
-                            <img src="" alt="">
-                            <a href="">Facebook</a>
-                        </li>
+                        <ul class="footer-socials-list">
+                            <li class="footer-socials-list-item footer-socials-list-item-fb">
+                                <a href="" class="footer-socials-list-item-link">
+                                    <span class="footer-socials-list-item__img"></span>
+                                    <span class="d-none d-md-block">Facebook</span>
+                                </a>
+                            </li>
 
-                        <li>
-                            <img src="" alt="">
-                            <a href="">Vkontakte</a>
-                        </li>
+                            <li class="footer-socials-list-item footer-socials-list-item-vk">
+                                <a href="" class="footer-socials-list-item-link">
+                                    <span class="footer-socials-list-item__img"></span>
+                                    <span class="d-none d-md-block">Vkontakte</span>
+                                </a>
+                            </li>
 
-                        <li>
-                            <img src="" alt="">
-                            <a href="">Instagram</a>
-                        </li>
+                            <li class="footer-socials-list-item footer-socials-list-item-instagram">
+                                <a href="" class="footer-socials-list-item-link">
+                                    <span class="footer-socials-list-item__img"></span>
+                                    <span class="d-none d-md-block">Instagram</span>
+                                </a>
+                            </li>
 
-                        <li>
-                            <img src="" alt="">
-                            <a href="">WhatsApp</a>
-                        </li>
-                    </ul>
+                            <li class="footer-socials-list-item footer-socials-list-item-whatsapp">
+                                <a href="" class="footer-socials-list-item-link">
+                                    <span class="footer-socials-list-item__img"></span>
+                                    <span class="d-none d-md-block">WhatsApp</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="col-3">
-                    <h3 class="footer-col__title">
-                        Контакты
-                    </h3>
-                    <ul>
-                        <li>
-                            <img src="" alt="">
-                            <a href="tel:79067557556">7 (906) 755 755 9</a>
-                        </li>
+                <div class="col-12 col-md-3 col-xl-2 offset-md-1">
+                    <div class="footer-contacts">
+                        <h3 class="footer-col__title">
+                            Контакты
+                        </h3>
+                        <ul class="footer-contacts-list">
+                            <li class="footer-contacts-list-item">
+                                <img src="images/phone1.svg" alt="" class="footer-contacts-list-item__img">
+                                <a href="tel:79067557556" class="footer-contacts-list-item__link">+7 906 755 755 9</a>
+                            </li>
 
-                        <li>
-                            <img src="" alt="">
-                            <a href="tel:79067557556">7 (906) 755 755 6</a>
-                        </li>
+                            <li class="footer-contacts-list-item">
+                                <img src="images/phone1.svg" alt="" class="footer-contacts-list-item__img">
+                                <a href="tel:79067557556" class="footer-contacts-list-item__link">+7 906 755 755 6</a>
+                            </li>
 
-                        <li>
-                            <img src="" alt="">
-                            <a href="mailto:info@mosmoto.tech">info@mosmoto.tech</a>
-                        </li>
-                    </ul>
+                            <li class="footer-contacts-list-item">
+                                <img src="images/email.svg" alt="" class="footer-contacts-list-item__img">
+                                <a href="mailto:info@mosmoto.tech" class="footer-contacts-list-item__link">info@mosmoto.tech</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!--<div class="moto-slider">-->
+        <!--<div>Слайд1</div>-->
+        <!--<div> Слайд2</div>-->
+        <!--<div> Слайд3</div>-->
+    <!--</div>-->
+
+    <div class="moto-slider-for">
+        <div class="moto-slide">Слайд1</div>
+        <div class="moto-slide">Слайд2</div>
+        <div class="moto-slide">Слайд3</div>
+    </div>
+    <div class="moto-slider-nav">
+        <div class="moto-slide">kek</div>
+        <div class="moto-slide">kek2</div>
+        <div class="moto-slide">kek3</div>
+        <div class="moto-slide-dots"></div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
   </body>
 </html>

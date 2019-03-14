@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{fill:#FFFFFF;}
+	.st2{clip-path:url(#SVGID_4_);}
+	.st3{clip-path:url(#SVGID_6_);}
+</style>
+<title>instagram</title>
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M32,26.1c0,3.3-2.6,5.9-5.9,5.9c0,0,0,0,0,0H13.9C10.7,32,8,29.4,8,26.1c0,0,0,0,0,0V13.9
+			C8,10.7,10.6,8,13.9,8c0,0,0,0,0,0h12.1c3.3,0,5.9,2.6,5.9,5.9c0,0,0,0,0,0V26.1z M26.1,5H13.9C9,5,5,9,5,13.9v12.1
+			C5,31,9,35,13.9,35h12.1c4.9,0,8.9-4,8.9-8.9V13.9C35,9,31,5,26.1,5z"/>
+	</defs>
+	<use xlink:href="#SVGID_1_"  style="overflow:visible;fill:#FFFFFF;"/>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st0">
+		<rect class="st1" width="40" height="40"/>
+	</g>
+</g>
+<g>
+	<defs>
+		<path id="SVGID_3_" d="M20.5,24.1c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S23,24.1,20.5,24.1L20.5,24.1z M20.5,12
+			c-4.1,0-7.5,3.4-7.5,7.5s3.4,7.5,7.5,7.5s7.5-3.4,7.5-7.5S24.6,12,20.5,12z"/>
+	</defs>
+	<use xlink:href="#SVGID_3_"  style="overflow:visible;fill:#FFFFFF;"/>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st2">
+		<rect x="8" y="7" class="st1" width="25" height="25"/>
+	</g>
+</g>
+<g>
+	<defs>
+		<circle id="SVGID_5_" cx="28" cy="12" r="2"/>
+	</defs>
+	<use xlink:href="#SVGID_5_"  style="overflow:visible;fill:#FFFFFF;"/>
+	<clipPath id="SVGID_6_">
+		<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st3">
+		<rect x="21" y="5" class="st1" width="14" height="14"/>
+	</g>
+</g>
+</svg>

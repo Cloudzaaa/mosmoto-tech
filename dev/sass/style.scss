@@ -430,11 +430,20 @@ body {
   }
 }
 
-.custom-slider-dot{
-  width: 30px;
-  height: 30px;
-  background: #fff;
-  border: 2px solid black;
+.moto-slider-nav-dots{
+  background-color: black;
+  margin-bottom: 100px;
+}
+
+.moto-slider-nav__dot {
+  width: 30px !important;
+  height: 30px !important;
+  border: 1px solid white;
+  border-radius: 50px;
+
+  &:hover {
+    background-color: #1c69d4;
+  }
 }
 
 //xxl

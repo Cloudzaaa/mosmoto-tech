@@ -16,7 +16,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
         arrows: false,
         dots: true,
-        appendDots: $('.kek'),
+        appendDots: $('.moto-slider-nav-dots'),
         asNavFor: '.moto-slider-nav',
     });
 

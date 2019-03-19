@@ -4,27 +4,15 @@ $(document).ready(function(){
         $(".navbar-menu").toggleClass('active');
     });
 
-
-    // $('.moto-slider').slick({
-    //     dots: true,
-    //     infinite: true,
-    //     autoplaySpeed: 2000,
-    // });
-
-    $('.moto-slider-for').slick({
+    //slider home page
+    $('.moto-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+        fade: true,
+        cssEase: 'linear',
         arrows: false,
         dots: true,
-        appendDots: $('.moto-slider-nav-dots'),
-        asNavFor: '.moto-slider-nav',
+        appendDots: $('.moto-slider-nav'),
     });
 
-    $('.moto-slider-nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.moto-slider-for',
-        centerMode: true,
-        focusOnSelect: true,
-    });
 });

@@ -128,23 +128,27 @@ body {
   font-family: "bmwTLight", sans-serif !important;
 }
 
-//@media (min-width: 1380px) {
-//  .container {
-//    width: 1440px;
-//  }
-//}
+.wrap-sec-main {
+  padding: 60px 0;
+  display: flex;
+  position: relative;
+  min-height: 300px;
+}
 
 .sec{
   &-main {
-  background-image: url('../images/slider-bg-1.jpg');
+  background-image: url('../images/header-home-bg.jpg');
   background-position: 0% 50%;
   background-size: cover;
-
     &-header{
+      position: absolute;
+      top: 0;
+      width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       height: 100%;
+      z-index: 10;
     }
   }
 
@@ -157,6 +161,23 @@ body {
     line-height: 1.5;
     margin-bottom: 50px;
   }
+}
+
+.sec-main-bg--services {
+  background-image: url('../images/header-services-bg.jpg');
+  .sec-title{
+    margin-bottom: 0;
+  }
+}
+
+.moto-slider{
+  width: 100%;
+  padding-left: 50%;
+  margin-bottom: 0;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
 }
 
 
@@ -354,11 +375,6 @@ body {
   }
 }
 
-.slider-photo{
-  margin-top: 100px;
-  width: 100%;
-}
-
 .btn {
   font-family: 'bmwTBold', sans-serif;
   color: #fff;
@@ -430,19 +446,14 @@ body {
   }
 }
 
-.moto-slider-nav-dots{
-  background-color: black;
-  margin-bottom: 100px;
-}
+.moto-slider-nav{
+  position: relative;
+  .slick-dots {
+    bottom: 30px;
 
-.moto-slider-nav__dot {
-  width: 30px !important;
-  height: 30px !important;
-  border: 1px solid white;
-  border-radius: 50px;
-
-  &:hover {
-    background-color: #1c69d4;
+    li button:before {
+      font-size: 15px;
+    }
   }
 }
 
@@ -455,6 +466,20 @@ body {
 
 //xl
 @media screen and (max-width: 1220px) {
+  .wrap-sec-main {
+    .sec-main-header {
+      width: 80%;
+      .sec-title{
+        margin-bottom: 15px;
+        font-size: 32px;
+      }
+    }
+  }
+
+  .btn {
+    font-size: 14px;
+    height: 50px;
+  }
 }
 
 //lg
@@ -505,6 +530,30 @@ body {
 
 //md
 @media screen and (max-width: 768px) {
+  .wrap-sec-main{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sec-main {
+    .container{
+      width: 100%;
+    }
+  }
+
+  .sec-main-header{
+    position: relative;
+    .sec-title{
+      text-align: center;
+    }
+  }
+
+  .moto-slider {
+    margin-top: 50px;
+    padding-left: 0;
+  }
+
   .navbar-wrap .container{
     width: 96%;
   }
@@ -538,6 +587,14 @@ body {
     width: 104%;
     top: 102px;
     right: -2%;
+  }
+
+  .wrap-sec-main {
+    .sec-main-header {
+      .sec-title {
+        font-size: 26px;
+      }
+    }
   }
 }
 

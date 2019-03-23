@@ -5,14 +5,27 @@ $(document).ready(function(){
     });
 
     //slider home page
-    $('.moto-slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        fade: true,
-        cssEase: 'linear',
-        arrows: false,
-        dots: true,
-        appendDots: $('.moto-slider-nav'),
-    });
+    if (document.querySelector('.moto-slider')) {
+        $('.moto-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true,
+            cssEase: 'linear',
+            arrows: false,
+            dots: true,
+            appendDots: $('.moto-slider-nav'),
+        });
+    }
+
+    if (document.querySelector('.partner-slider')) {
+        $('.partner-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            cssEase: 'linear',
+            arrows: true,
+            prevArrow: $('.partner-slider-wrap__right-arrow'),
+            nextArrow: $('.partner-slider-wrap__left-arrow'),
+        });
+    }
 
 });

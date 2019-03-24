@@ -140,6 +140,7 @@ body {
     background-image: url('../images/header-home-bg.jpg');
     background-position: 0% 50%;
     background-size: cover;
+
     &-header {
       position: absolute;
       top: 0;
@@ -198,14 +199,17 @@ body {
   &-menu {
     display: flex;
     margin-left: auto;
+
     &-item {
       list-style-type: none;
+
       &__link {
         padding: 0 20px 5px 20px;
         text-decoration: none;
         color: #ffffff;
         letter-spacing: 1.5px;
         border-bottom: 1px solid transparent;
+
         &:hover {
           border-bottom: 2px solid $blue;
         }
@@ -217,6 +221,7 @@ body {
     margin-left: 30px;
     color: #ffffff;
     display: flex;
+
     &-phone__img {
       width: 15px;
       height: 15px;
@@ -231,6 +236,7 @@ body {
 
     &-info-phone__number {
       margin-bottom: 10px;
+
       a {
         text-decoration: none;
         color: #ffffff;
@@ -317,6 +323,7 @@ body {
     &-instagram &__img {
       background-image: url('../images/instagram.svg');
     }
+
     &-instagram:hover &__img {
       background-image: url('../images/instagram-active.svg');
     }
@@ -341,12 +348,14 @@ body {
 .footer-navbar-menu-item {
   list-style-type: none;
   display: flex;
+
   &__link {
     color: #ffffff;
     text-decoration: none;
     letter-spacing: 1px;
     margin-bottom: 5px;
     border-bottom: 1px solid transparent;
+
     &:hover {
       border-bottom: 1px solid $blue;
     }
@@ -359,6 +368,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 12px;
+
     &__img {
       width: 20px;
       margin-right: 10px;
@@ -368,6 +378,7 @@ body {
       text-decoration: none;
       color: #ffffff;
       border-bottom: 1px solid transparent;
+
       &:hover {
         border-bottom: 1px solid $blue;
       }
@@ -398,8 +409,10 @@ body {
 
 .sec-news {
   padding: 50px 0;
+
   .sec-pretitle {
     margin-bottom: 20px;
+
     a {
       font-family: "bmwTItalic", sans-serif;
       text-decoration: none;
@@ -421,6 +434,7 @@ body {
   border-radius: 5px;
   border: 1px solid $grey;
   transition: 0.2s;
+
   &:hover {
     border: 1px solid $blue;
   }
@@ -435,6 +449,7 @@ body {
     margin-bottom: 5px;
     letter-spacing: .5px;
   }
+
   &__title {
     height: 55px;
     overflow: hidden;
@@ -448,6 +463,7 @@ body {
 
 .moto-slider-nav {
   position: relative;
+
   .slick-dots {
     bottom: 30px;
 
@@ -469,6 +485,7 @@ body {
   .wrap-sec-main {
     .sec-main-header {
       width: 80%;
+
       .sec-title {
         margin-bottom: 15px;
         font-size: 32px;
@@ -546,6 +563,7 @@ body {
 
   .sec-main-header {
     position: relative;
+
     .sec-title {
       text-align: center;
     }
@@ -824,6 +842,7 @@ body {
     position: relative;
     overflow: hidden;
     color: #ffffff;
+
     &:hover .services-card-bg {
       transform: scale(1.2);
     }
@@ -837,6 +856,7 @@ body {
       width: 50px;
       margin-bottom: 10px;
     }
+
     &__title {
       font-family: "bmwHelBold", sans-serif;
       font-size: 30px;
@@ -881,6 +901,7 @@ body {
       align-items: center;
       justify-content: center;
       text-align: center;
+
       .services-card-bg {
         width: 100%;
         height: auto;
@@ -917,6 +938,7 @@ body {
 .services-card--big {
   height: 700px;
   justify-content: center !important;
+
   .services-card-bg {
     width: 100%;
     height: auto !important;
@@ -971,6 +993,7 @@ body {
 
   .partner-slider {
     height: 500px;
+
     &__slide {
       height: 500px;
       width: auto !important;
@@ -1036,6 +1059,8 @@ body {
     border: 1px solid $grey;
     transition: 0.2s;
     margin-bottom: 30px;
+    text-decoration: none;
+
     &:hover {
       border: 1px solid $blue;
     }
@@ -1075,8 +1100,10 @@ body {
     .container {
       width: 96%;
     }
+
     .partner-slider {
       height: auto;
+
       img.partner-slider__slide {
         width: 100% !important;
         height: auto !important;
@@ -1097,7 +1124,7 @@ body {
 @media screen and (max-width: 768px) {
   .sec-partners-cards {
     .sec-title {
-     font-size: 24px;
+      font-size: 24px;
     }
   }
 }
@@ -1107,12 +1134,90 @@ body {
     height: 45px;
   }
 
-  .partners-cards-card__img--luis{
+  .partners-cards-card__img--luis {
     height: 95px;
   }
 
-  .partners-cards-card__title{
+  .partners-cards-card__title {
     font-size: 18px;
   }
+}
 
+.contacts-info-address {
+  &__title {
+    font-family: "bmwHelBold", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 34px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__street {
+    font-family: "bmwHelBold", sans-serif;
+    font-size: 20px;
+    color: $blue;
+
+  }
+}
+
+.contacts-content {
+  padding: 30px 0;
+}
+
+.contacts-info-work-time {
+  margin: 30px 0;
+
+  &__title{
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  &-days {
+    margin-bottom: 5px;
+    color: $darkgrey;
+    &__day {
+      color: black;
+    }
+  }
+
+  &-days__day {
+    font-weight: bold;
+  }
+}
+
+.contacts-info-contacts {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin-bottom: 10px;
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #000000;
+    &__img {
+      width: 16px;
+      height: 16px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.contacts-qr {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+  margin: 30px;
+  border: solid 1px $grey;
+  color: $darkgrey;
+  border-radius: 5px;
+}
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
 }

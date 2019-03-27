@@ -1348,6 +1348,8 @@ body {
 
 .sec-news-page {
 
+  padding-bottom: 30px;
+
   .last-news{
     margin-bottom: 30px;
     margin-top: 30px;
@@ -1377,6 +1379,7 @@ body {
     }
   }
 
+
   .news-cards-card{
     cursor: pointer;
     height: 180px;
@@ -1394,8 +1397,13 @@ body {
       padding-left: 10px;
     }
 
+    &__read {
+      transition: .2s;
+    }
+
     &:hover .news-cards-card__read{
       color:$blue;
+
     }
   }
 
@@ -1446,6 +1454,22 @@ body {
         margin-top: 10px;
       }
     }
+  }
+}
+
+.sec-news-item {
+  padding: 30px 0 30px 0;
+  .news-cards-card {
+    margin-bottom: 30px;
+  }
+
+  .news-content__text{
+    margin-bottom: 50px;
+    line-height: 1.5;
+  }
+
+  .news-content__pretitle{
+    margin-bottom: 30px;
   }
 }
 

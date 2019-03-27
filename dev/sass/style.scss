@@ -405,7 +405,6 @@ body {
   border-bottom: none;
   letter-spacing: 1.25px;
   transition: 0.2s;
-  cursor: pointer;
 
   &:active, &:hover {
     background-color: #08479e;
@@ -828,6 +827,10 @@ body {
 
 .mb-15 {
   margin-bottom: 15px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
 }
 
 .no-overflow {
@@ -1457,18 +1460,21 @@ body {
   }
 }
 
-.sec-news-item {
+.text-title{
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-family: "bmwHelBold", sans-serif;
+}
+
+.text-usual{
+  margin-bottom: 50px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.sec-article {
   padding: 30px 0 30px 0;
   .news-cards-card {
-    margin-bottom: 30px;
-  }
-
-  .news-content__text{
-    margin-bottom: 50px;
-    line-height: 1.5;
-  }
-
-  .news-content__pretitle{
     margin-bottom: 30px;
   }
 }

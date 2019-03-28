@@ -1351,6 +1351,15 @@ body {
   font-family: "bmwHelBold", sans-serif;
 }
 
+.title-lg {
+  font-family: "bmwTItalic", sans-serif;
+  font-size: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
 .sec-news-page {
 
   padding-bottom: 30px;
@@ -1475,9 +1484,57 @@ body {
 }
 
 .sec-article {
-  padding: 30px 0 30px 0;
+  padding: 30px 0 50px 0;
   .news-cards-card {
     margin-bottom: 30px;
   }
 }
 
+
+.c-black {
+  color: black;
+}
+
+.c-blue {
+  color: $blue;
+}
+
+.sec-services-cards{
+  background-color: $whitegrey;
+  padding: 50px 0;
+}
+
+.cards {
+
+  .title-lg {
+    margin-bottom: 30px;
+  }
+
+  &-card {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 25px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid $grey;
+    transition: 0.2s;
+    cursor: pointer;
+    height: 100px;
+    margin-bottom: 30px;
+    &__text {
+      font-family: "bmwTBold", sans-serif;
+      color: $darkgrey;
+      line-height: 1.4;
+
+    }
+
+    &:hover {
+      border: 1px solid $blue;
+    }
+
+    &:hover &__text {
+      color: $blue;
+    }
+  }
+}

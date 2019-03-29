@@ -172,6 +172,27 @@ body {
 
 .sec-main--services {
   background-image: url('../images/header-services-bg.jpg');
+  background-position: center;
+}
+
+.sec-main--partners {
+  background-image: url('../images/header-partners-bg.jpg');
+  background-position: center;
+}
+
+.sec-main--contacts {
+  background-image: url('../images/header-contacts-bg.jpg');
+  background-position: center;
+}
+
+.sec-main--news {
+  background-image: url('../images/header-news-bg.jpg');
+  background-position: center;
+}
+
+.sec-main--news-item {
+  background-image: url('../images/header-news-item-bg.jpg');
+  background-position: center;
 }
 
 .moto-slider {
@@ -193,8 +214,16 @@ body {
     border-bottom: 1px solid #797975;
   }
 
-  &-brand__logo {
+  &-brand {
     display: flex;
+    &__logo {
+      background-image: url("../images/logo.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      width: 260px;
+      height: 100px;
+    }
   }
 
   &-menu {
@@ -487,6 +516,15 @@ body {
 
 //xl
 @media screen and (max-width: 1220px) {
+
+  .navbar-brand {
+    &__logo {
+      background-image: url("../images/logo-small.svg");
+      background-position: 0 center;
+      width: 100px;
+      height: 40px;
+    }
+  }
   .wrap-sec-main {
     .sec-main-header {
       width: 80%;
@@ -523,7 +561,7 @@ body {
     }
 
     &-menu.active {
-      z-index: 9;
+      z-index: 11;
       opacity: 1;
       visibility: visible;
     }
@@ -546,6 +584,10 @@ body {
       height: 100%;
       align-self: center;
       margin-left: auto;
+    }
+
+    &-contacts {
+      display: none;
     }
   }
 }
@@ -1241,7 +1283,7 @@ body {
 
 .contacts-form-wrap {
   border-radius: 5px;
-  background-image: url('../images/contact-form-bg.png');
+  background-image: url('../images/contacts-form-bg.png');
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -1252,7 +1294,7 @@ body {
   flex-direction: column;
   background-color: #f5f5f5;
   padding: 120px 80px;
-  margin: 50px;
+  margin: 100px 50px;
   border-radius: 5px;
 
   &__title {
@@ -1406,18 +1448,27 @@ body {
     justify-content: space-between;
 
     &__title {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       width: 50%;
       padding-left: 10px;
     }
 
     &__read {
       transition: .2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card__read-arrow{
+      font-size: 42px;
+      line-height: .8;
+      margin-right: 10px;
+      margin-bottom: 10px;
     }
 
     &:hover .news-cards-card__read{
       color:$blue;
-
     }
   }
 
@@ -1455,7 +1506,7 @@ body {
       &__title {
         padding-left: 0;
         width: 100%;
-        font-size: 20px;
+        font-size: 26px;
         height: auto;
       }
 
@@ -1464,10 +1515,27 @@ body {
         flex-direction: column;
       }
 
+      &__read{
+        font-size: 20px;
+      }
+
       &__date {
-        margin-top: 10px;
+        font-size: 14px;
+        margin-top: 14px;
       }
     }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sec-news-page{
+    .container {
+      width: 96%;
+    }
+  }
+
+  .news-cards-card__title{
+    font-size: 24px;
   }
 }
 
@@ -1487,7 +1555,34 @@ body {
   padding: 30px 0 50px 0;
   .news-cards-card {
     margin-bottom: 30px;
+    background-color: $whitegrey;
+    border-color: $whitegrey;
+
+    &-about {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__read {
+      transition: .2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__date{
+      margin-bottom: 0;
+    }
+
+    .card__read-arrow{
+      font-size: 42px;
+      line-height: .8;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
   }
+
 }
 
 
@@ -1506,7 +1601,7 @@ body {
 
 .cards {
 
-  .title-lg {
+  .title-md {
     margin-bottom: 30px;
   }
 
@@ -1537,4 +1632,48 @@ body {
       color: $blue;
     }
   }
+}
+
+@media screen and (max-width: 768px) {
+  .sec-article {
+    .news-cards-card {
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &__title{
+        text-align: center;
+      }
+
+      &-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}
+
+
+.sec-main--services-0{
+  .sec-main-header{
+    width: 70%;
+  }
+}
+
+.sec-article--services-0{
+  .contacts-form-wrap{
+    background-image: url("../images/moto-form-bg.png");
+  }
+}
+
+.article-img {
+  display: flex;
+  margin: 35px auto;
+}
+
+.bold {
+  font-weight: 700;
 }

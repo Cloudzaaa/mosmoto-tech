@@ -195,6 +195,36 @@ body {
   background-position: center;
 }
 
+.sec-main--service-0 {
+  background-image: url('../images/header-news-item-bg.jpg');
+  background-position: center;
+}
+
+.sec-main--service-repairs {
+  background-image: url('../images/header-service-repair-bg.jpg');
+  background-position: center;
+}
+
+.sec-main--service-tuning {
+  background-image: url('../images/header-service-tuning-bg.jpg');
+  background-position: center;
+}
+
+.sec-main--service-parts {
+  background-image: url('../images/header-service-tuning-bg.jpg');
+  background-position: center;
+}
+
+.sec-main--service-winterstore {
+  background-image: url('../images/header-service-winterstore-bg.jpg');
+  background-position: center;
+}
+
+.sec-main--discounts {
+  background-image: url('../images/header-discounts-bg.jpg');
+  background-position: center;
+}
+
 .moto-slider {
   width: 100%;
   padding-left: 50%;
@@ -241,7 +271,7 @@ body {
         border-bottom: 1px solid transparent;
 
         &:hover {
-          border-bottom: 2px solid $blue;
+          border-bottom: 3px solid $blue;
         }
       }
     }
@@ -867,6 +897,10 @@ body {
   margin-top: 15px;
 }
 
+.mt-30 {
+  margin-top: 30px;
+}
+
 .mb-15 {
   margin-bottom: 15px;
 }
@@ -1069,14 +1103,16 @@ body {
   }
 }
 
-.usual-text {
+.text-usual {
   color: #333333;
   font-family: 'bmwTLight', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 1.5px;
+  margin-bottom: 50px;
 }
+
 
 .sec-partners-cards {
   .sec-title {
@@ -1214,11 +1250,6 @@ body {
 
 .contacts-content {
   padding: 40px 0;
-
-  .contacts-map{
-    max-width: 100%;
-  }
-
 }
 
 .contacts-info{
@@ -1369,10 +1400,6 @@ body {
   .qr-instruction {
     display: none;
   }
-
-  .contacts-map{
-    margin-bottom: 50px;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1434,8 +1461,9 @@ body {
       margin-top: 50px;
     }
   }
+}
 
-
+.news-cards-big {
   .news-cards-card{
     cursor: pointer;
     height: 180px;
@@ -1479,6 +1507,7 @@ body {
   .news-cards-card-about{
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -1545,11 +1574,7 @@ body {
   font-family: "bmwHelBold", sans-serif;
 }
 
-.text-usual{
-  margin-bottom: 50px;
-  line-height: 1.5;
-  font-size: 14px;
-}
+
 
 .sec-article {
   padding: 30px 0 50px 0;
@@ -1641,6 +1666,7 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      align-items: center;
 
       &__title{
         text-align: center;
@@ -1657,13 +1683,13 @@ body {
 }
 
 
-.sec-main--services-0{
+.sec-main--service{
   .sec-main-header{
     width: 70%;
   }
 }
 
-.sec-article--services-0{
+.sec-article--service{
   .contacts-form-wrap{
     background-image: url("../images/moto-form-bg.png");
   }
@@ -1674,6 +1700,25 @@ body {
   margin: 35px auto;
 }
 
+.w100 {
+  width: 100%;
+}
+
 .bold {
   font-weight: 700;
+}
+
+.article-list__item{
+  margin: 20px 0 25px 30px;
+  padding-left: 15px;
+}
+
+.text-emphasis{
+  font-family: "bmwTBold", sans-serif;
+  color: $blue;
+  font-size: 24px;
+  text-align: center;
+  border-top: 3px solid $whitegrey;
+  border-bottom: 3px solid $whitegrey;
+  padding: 25px 0;
 }
